@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Форма</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <Link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main>
+        <div class="form-container">
+            <div class="form-container__heading">    
+                <h1 class="form-title">Вход</h1>
+            </div>
+            <form class="form" action="#">
+                <div class="form-email">
+                    <label class="form-email__label" for="email">Email</label>
+                    <input class="form-email__input" id="email" name="email" type="email" placeholder="Введите email">
+                </div>
+                <div class="form-password">
+                    <label class="form-password__label" for="password">Пароль</label>
+                    <input class="form-password__input" id="password" name="password" type="password" placeholder="Введите пароль">
+                </div>
+                <div class="form-checkbox">
+                    <input class="form-checkbox__input" id="checkbox" name="checkbox" type="checkbox">
+                    <label class="form-checkbox__subtitle" for="checkbox">Я согласен получать обновления на почту</p>
+                </div>
+                <div class="form__button">
+                    <a href="#">Войти</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
