@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:300,regular,500,500italic,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="logo 1.png" alt="logo">
+        <span class="header__logo-title">PCS Frontend</span>
+        <div class="header-link">
+            <a class="header__link-registration" href="RegForm/reg.html">Регистрация</a>
+            <a class="header__link-login" href="index.html">Вход</a>
+        </div>
+    </header>
+    <main>
+        <form class="form" action="#">
+            <div class="form__title">Вход</div> 
+            <label class="form__email-label" for="email">Email</label>
+            <input class="form__email-input" id="email" name="email" type="email" placeholder="Введите email">
+            <label class="form__password-label" for="password">Пароль</label> 
+            <input class="form__password-input" id="password" name="password" type="password" placeholder="Введите пароль">
+            <button class="form__button">Войти</button>
+        </form>
+    </main>
+</body>
+</html>
