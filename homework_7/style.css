@@ -18,7 +18,7 @@ main {
 
 @media screen and (min-width: 769px) {
 
-.form {
+.form-container {
     top: calc(92 / 1440 * 100vw);
     left: calc(412 / 1440 * 100vw);
     width: calc(600 / 1440 * 100vw);
@@ -31,6 +31,11 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.form-container__heading {
+    top: calc(26 / 1440 * 100vw);
+    left: calc(242 / 1440 * 100vw);
 }
 
 .form-title {
@@ -49,7 +54,7 @@ main {
     margin-bottom: calc(24 / 1440 * 100vw);
 }
 
-.form__email-label {
+.form-email__label {
     font-size: calc(16/ 1440 * 100vw);
     line-height: calc(16 / 1440 * 100vw);
     font-weight: 700;
@@ -57,7 +62,7 @@ main {
 }
 
 
-.form__email-input {
+.form-email__input {
     top: calc(112 / 1440 * 100vw);
     left: calc(45 / 1440 * 100vw);
     width: calc(510 / 1440 * 100vw);
@@ -71,21 +76,21 @@ main {
     line-height: calc(36 / 1440 * 100vw);
 }
 
-/**.form-password {
+.form-password {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: calc(16 / 1440 * 100vw);
-}*/
+}
 
-.form__password-label {
+.form-password__label {
     font-size: calc(16/ 1440 * 100vw);
     line-height: calc(16 / 1440 * 100vw);
     font-weight: 700;
     color: #787878;
 }
 
-.form__password-input {
+.form-password__input {
     top: calc(112 / 1440 * 100vw);
     left: calc(45 / 1440 * 100vw);
     width: calc(510 / 1440 * 100vw);
