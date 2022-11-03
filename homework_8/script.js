@@ -22,27 +22,22 @@ switch(operator.trim()) {
     break;
     default: result = 'Программа не поддерживает такую операцию';
     break;
+}
+if (operand1.length===0) {
+    console.log('Первое число не указано')   
+} else if (!((Number(operand1)*0) === 0) ) {
+    console.log('Некорректный ввод 1-го числа')    
 };
-
-if (operand2.trim() === '') {
-    result = 'Второе значение не указано';
+if (operand2.length===0) {
+    console.log('Второе число не указано')   
+} else if (!((Number(operand2)*0) === 0 )) {
+    console.log('Некорректный ввод 2-го числа')    
 };
-
-if (operand1.trim() === '') {
-    result = 'Первое значение не указано';
-};
-
-if (isNaN(operand1) || isNaN(operand2)) {
-    result = 'Некорректный ввод чисел';
-};
-
-if (result === Infinity) {
-    result = 'Операция не корректна';  
-};
-
-if (result !== 'Программа не поддерживает такую операцию' && result !== 'Первое значение не указано' && result !== 'Второе значение не указано' && result !== 'Некорректный ввод значений' && result !== 'Не введён знак' && isNaN(result)) {
-    result = 'Операция не корректна';
-};
+if (operator.length===0) {
+    console.log('Не введен знак')   
+} else if (!((operator === '/')||(operator === '*')||(operator === '+')||(operator === '-'))) {
+    console.log('Программа не поддерживает такую операцию')    
+}
 
 console.log(result)
 document.getElementById('result').innerText = result;
