@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vw;
+  background: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: #787878;
+  width: 100vw;
+  height: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__box {
+  display: flex;
+}
+
+.header-box__logo {
+  width: 222px;
+  height: 50px;
+  background-image: url(img/1280px-IU_logo\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-left: calc(30 / 1440 * 100vw);
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.header-box__title {
+  width: 242px;
+  height: 44px;
+  font-size: 36px;
+  line-height: 44px;
+  margin-left: calc(30 / 1440 * 100vw);
+  margin-top: 21px;
+  margin-bottom: 15px;
+}
+
+.header__tab {
+  display: flex;
+  width: 245px;
+  margin-right: calc(43 / 1440 * 100vw);
+}
+
+a {
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+  color: #787878;
+}
+
+.header-tab__registration {
+  width: 157px;
+  height: 29px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  margin-right: calc(28 / 1440 * 100vw);
+}
+
+.header-tab__login {
+  width: 60px;
+  height: 29px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  color: #1A226B;
+}
+
+.main {
+  color: #787878;
+  display: flex;
+  justify-content: center;
+}
+
+.main__container {
+  margin-top: 125px;
+  width: 600px;
+  height: 383px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+.main-container__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container-form__heading {
+  margin: 0;
+  margin-left: 242px;
+  margin-right: 242px;
+  margin-top: 26px; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.main-container-form__email-label {
+  width: 40px;
+  height: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 17px;
+  margin-left: 53px;
+  margin-right: 501px;
+}
+
+.main-container-form__email-input {
+  width: 509px;
+  height: 49px;
+  background: #FFFFFF;
+  border: 2px solid #787878;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #787878;
+  margin-left: 45px;
+  margin-right: 46px;
+  margin-top: 4px;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+
+.main-container-form__email-input::placeholder {
+  color: #CCCCCC;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.main-container-form__password-label {
+  width: 56px;
+  height: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 53px;
+  margin-top: 11px;
+  margin-right: 491px;
+}
+
+.main-container-form__password-input {
+  width: 509px;
+  height: 49px;
+  background: #FFFFFF;
+  border: 2px solid #787878;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #787878;
+  margin-top: 5px;
+  margin-left: 45px;
+  margin-right: 46px;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+
+.main-container-form__password-input::placeholder {
+  color: #CCCCCC;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.main-container-form__button {
+  width: 180px;
+  height: 52px;
+  background: #1A226B;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 16px;
+  color: #FFFFFF;
+  border: none;
+  margin-top: 52px;
+  margin-left: 210px;
+  margin-right: 210px;
+  margin-bottom: 37px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+      width: 100vw;
+      height: calc(80 / 768 * 100vw);
+    }
+
+    .header-box__logo {
+      width: calc(124 / 768 * 100vw);
+      height: calc(25 / 768 * 100vw);
+      margin-top: calc(25 / 768 * 100vw);
+      margin-left: calc(20 / 768 * 100vw);
+      margin-bottom: calc(30 / 768 * 100vw);
+    }
+
+    .header-box__title {
+      width: calc(162 / 768 * 100vw);
+      height: calc(29 / 768 * 100vw);
+      font-size: calc(24 / 768 * 100vw);
+      line-height: calc(29 / 768 * 100vw);
+      margin-top: calc(23 / 768 * 100vw);
+      margin-bottom: calc(28 / 768 * 100vw);
+      margin-left: calc(34 / 768 * 100vw);
+    }
+
+    .header__tab {
+      width: calc(181 / 768 * 100vw);
+      margin-right: calc(28 / 768 * 100vw);
+    }
+
+    a {
+      font-size: calc(16 / 768 * 100vw);
+      line-height: calc(19 / 768 * 100vw);
+    }
+
+    .header-tab__registration {
+      width: calc(105 / 768 * 100vw);
+      height: calc(19 / 768 * 100vw);
+      margin-top: calc(30 / 768 * 100vw);
+      margin-bottom: calc(31 / 768 * 100vw);
+      margin-right: calc(36 / 768 * 100vw);
+    }
+
+    .header-tab__login {
+      width: calc(40 / 768 * 100vw);
+      height: calc(19 / 768 * 100vw);
+      margin-top: calc(30 / 768 * 100vw);
+      margin-bottom: calc(31 / 768 * 100vw);
+    }
+
+    .main__container {
+      width: calc(600 / 768 * 100vw);
+      height: calc(382 / 768 * 100vw);
+      margin-top: calc(80 / 768 * 100vw);
+    }
+
+    .main-container-form__heading {
+      margin-top: calc(26 / 768 * 100vw);
+      margin-left: calc(242 / 768 * 100vw);
+      margin-right: calc(243 / 768 * 100vw);
+      font-size: calc(50 / 768 * 100vw);
+      line-height: calc(50 / 768 * 100vw);
+    }
+
+    .main-container-form__email-label {
+      width: calc(40 / 768 * 100vw);
+      height: calc(16 / 768 * 100vw);
+      margin-top: calc(17 / 768 * 100vw);
+      margin-left: calc(53 / 768 * 100vw);
+      margin-right: calc(501 / 768 * 100vw);
+      font-size: calc(16 / 768 * 100vw);
+      line-height: calc(16 / 768 * 100vw);
+    }
+
+    .main-container-form__email-input {
+      display: flex;
+      width: calc(509 / 768 * 100vw);
+      height: calc(49 / 768 * 100vw);
+      margin-top: calc(3 / 768 * 100vw);
+      margin-left: calc(45 / 768 * 100vw);
+      margin-right: calc(45 / 768 * 100vw);
+      border: calc(2 / 768 * 100vw) solid #787878;
+      font-size: calc(28 / 768 * 100vw);
+      line-height: calc(36 / 768 * 100vw);
+      padding-left: calc(15 / 768 * 100vw);
+      padding-top: calc(7 / 768 * 100vw);
+      padding-bottom: calc(6 / 768 * 100vw);
+    }
+
+    .main-container-form__email-input::placeholder {
+      font-size: calc(28 / 768 * 100vw);
+      line-height: calc(36 / 768 * 100vw);
+    }
+
+    .main-container-form__password-label {
+      width: calc(56 / 768 * 100vw);
+      height: calc(16 / 768 * 100vw);
+      margin-top: calc(11 / 768 * 100vw);
+      margin-left: calc(53 / 768 * 100vw);
+      margin-right: calc(491 / 768 * 100vw);
+      font-size: calc(16 / 768 * 100vw);
+      line-height: calc(16 / 768 * 100vw);
+    }
+
+    .main-container-form__password-input {
+      width: calc(509 / 768 * 100vw);
+      height: calc(49 / 768 * 100vw);
+      margin-top: calc(3 / 768 * 100vw);
+      margin-left: calc(45 / 768 * 100vw);
+      margin-right: calc(45 / 768 * 100vw);
+      border: calc(2 / 768 * 100vw) solid #787878;
+      font-size: calc(28 / 768 * 100vw);
+      line-height: calc(36 / 768 * 100vw);
+      padding-left: calc(15 / 768 * 100vw);
+      padding-top: calc(7 / 768 * 100vw);
+      padding-bottom: calc(6 / 768 * 100vw);
+    }
+
+    .main-container-form__password-input::placeholder {
+      font-size: calc(28 / 768 * 100vw);
+      line-height: calc(36 / 768 * 100vw);
+    }
+
+    .main-container-form__button {
+      width: calc(180 / 768 * 100vw);
+      height: calc(52 / 768 * 100vw);
+      margin-top: calc(52 / 768 * 100vw);
+      margin-left: calc(210 / 768 * 100vw);
+      margin-right: calc(210 / 768 * 100vw);
+      margin-bottom: calc(37 / 768 * 100vw);
+      font-size: calc(24 / 768 * 100vw);
+      line-height: calc(16 / 768 * 100vw);
+    }
+}

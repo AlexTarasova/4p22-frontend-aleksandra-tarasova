@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_registration.css" type="text/css">
+  <link rel="stylesheet" href="fonts/fonts-inter.css" type="text/css">
+  <link rel="stylesheet" href="fonts/fonts-roboto.css" type="text/css">
+  <title>Регистрация</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__box">
+      <div class="header-box__logo"></div>
+      <div class="header-box__title">PCS Frontend</div>
+    </div>
+    <div class="header__tab">
+      <a class="header-tab__registration" href="index.html">Регистрация</a>
+      <a class="header-tab__login" href="login.html">Вход</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__container">
+      <form class="main-container__form">
+        <h1 class="main-container-form__heading">Регистрация</h1>
+          <label class="main-container-form__email-label" for="email">* Email</label>
+          <div class="main-container-form__email-error" id="email-error"></div>
+          <input class="main-container-form__email-input" id="email" name="email" type="email" placeholder="Введите email" autocomplete="off">
+
+          <label class="main-container-form__password-label" for="password">* Пароль</label>
+          <div class="main-container-form__password-error" id="password-error"></div>
+          <input class="main-container-form__password-input" id="password" name="password" type="password" placeholder="Введите пароль" autocomplete="off">
+
+          <label class="main-container-form__password-confirmation-label" for="password-confirmation">* Подтверждение пароля</label>
+          <div class="main-container-form__password-confirmation-error" id="password-confirmation-error"></div>
+          <input class="main-container-form__password-confirmation-input" id="password-confirmation" name="password-confirmation" type="password" placeholder="Подтвердите пароль" autocomplete="off">
+
+          <div class="main-container-form__gender-title">Пол</div> 
+          <input class="main-container-form__radio-man" id="radio-man" name="gender" type="radio" value="man">
+          <label for="radio-man">Мужчина</label>
+          <input  class="main-container-form__radio-woman" id="radio-woman" name="gender" type="radio" value="woman">
+          <label for="radio-woman">Женщина</label>
+
+          <label class="main-container-form__about-me-label" for="about-me">О себе</label>
+          <textarea class="main-container-form__about-me-taxtarea" id="about-me" name="about-me" placeholder="Расскажите о себе..."></textarea>
+
+          <input class="main-container-form__checkbox" id="checkbox" name="checkbox" type="checkbox"  value="yes">
+          <label for="checkbox">Я согласен получать обновления на почту</label>
+          <button class="main-container-form__button" id="register-button">Регистрация</button>
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
