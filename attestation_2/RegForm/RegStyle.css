@@ -190,6 +190,27 @@ body {
     outline: #787878 none;
 }
 
+.form__email-required-eror{
+    position: absolute;
+    top: calc(86 / 1440 * 100vw);
+    right: calc(45 / 1440 * 100vw);
+    color: #EE2424;
+}
+
+.form__password-required-error {
+    position: absolute;
+    top: calc(169 / 1440 * 100vw);
+    right: calc(45 / 1440 * 100vw);
+    color: #EE2424;
+}
+
+.form__password-different-error{
+    position: absolute;
+    top: calc(249 / 1440 * 100vw);
+    right: calc(45 / 1440 * 100vw);
+    color: #EE2424;
+}
+
 .form__gender {
     position: absolute;
     height: calc(16 / 1440 * 100vw);
@@ -545,6 +566,27 @@ body {
     outline: #787878 none;
 }
     
+.form__email-required-eror{
+    position: absolute;
+    top: calc(86 / 768 * 100vw);
+    right: calc(45 / 768 * 100vw);
+    color: #EE2424;
+}
+
+.form__password-required-error {
+    position: absolute;
+    top: calc(169 / 768 * 100vw);
+    right: calc(45 / 768 * 100vw);
+    color: #EE2424;
+}
+
+.form__password-different-error{
+    position: absolute;
+    top: calc(249 / 768 * 100vw);
+    right: calc(45 / 768 * 100vw);
+    color: #EE2424;
+}
+
 .form__gender {
     position: absolute;
     height: calc(16 / 768 * 100vw);
