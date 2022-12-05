@@ -1,0 +1,92 @@
+@import '../../assets/scss/variables';
+
+.form-page {
+  .error {
+    background-color: lighten(red, 45);
+    &::after {
+      content: 'Ошибка!';
+    }
+  }
+  h2 {
+    margin-bottom: 35px;
+  }
+  &__file {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .file-input {
+      margin-top: 10px;
+      max-width: 280px;
+      margin-bottom: 10px;
+      @media (max-width: 540px) {
+        padding: 5px;
+        font-size: 13px;
+        max-width: 250px;
+      }
+    }
+  }
+  &__radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media (max-width: 540px) {
+      font-size: 13px;
+    }
+  }
+  &__radio-wrapper {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+    label {
+      margin-right: 5px;
+    }
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @media (max-width: 540px) {
+      font-size: 13px;
+    }
+    label {
+      margin-right: 12px;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    input, textarea {
+      border: 1px solid #444;
+      padding: 10px 14px;
+    }
+    input, textarea, button {
+      font-family: inherit;
+      font-size: 15px;
+      border-radius: 6px;
+    }
+    textarea {
+      resize: none;
+      height: 200px;
+    }
+    button {
+      border: none;
+      cursor: pointer;
+      padding: 15px 20px;
+      background-color: $blues;
+      color: #fff;
+      font-weight: 700;
+      transition: 0.15s ease-in;
+      &:disabled {
+        opacity: 0.5;
+      }
+      &:hover {
+        background-color: darken($blues, 15);
+      }
+    }
+  }
+}
